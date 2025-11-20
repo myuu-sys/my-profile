@@ -1,0 +1,105 @@
+/* 全体のリセットと基本設定 */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* 薄いグレーの背景 */
+}
+
+/* レイアウトの幅を制限して中央に寄せる */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center; /* 文字を中央揃え */
+}
+
+/* --- ヘッダーのデザイン --- */
+header {
+    background-color: #2c3e50; /* 濃い紺色 */
+    color: #fff;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* --- プロフィール画像 --- */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* 画像の比率を保ったままトリミング */
+    border-radius: 50%; /* 完全に丸くする */
+    border: 5px solid #fff; /* 白い枠線 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 影をつける */
+    margin-bottom: 20px;
+    background-color: #ddd; /* 画像がない時の背景色 */
+}
+
+/* --- セクション共通 --- */
+section {
+    margin-bottom: 60px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db; /* 下線 */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* --- スキルリスト (Flexboxの使用) --- */
+.skill-list {
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    flex-wrap: wrap; /* 折り返し許可 */
+    gap: 15px; /* アイテム間の隙間 */
+}
+
+.skill-item {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* --- ボタンのデザイン --- */
+.btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none; /* 下線を消す */
+    border-radius: 5px;
+    transition: background-color 0.3s; /* アニメーション */
+}
+
+/* ホバー時（マウスを乗せた時）の変化 */
+.btn:hover {
+    background-color: #c0392b;
+}
+
+/* --- フッター --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
